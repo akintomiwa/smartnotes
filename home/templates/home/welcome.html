@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="my-5 text-center container">
+    <p>Welcome to SNotes! This is a simple note-taking app.
+    </p>
+    <p>Today is {{today}}. </p>
+    <a href="{% url 'notes.list' %}" class="btn btn-primary">See smart notes here!</a>
+</div>
+{% endblock %}
